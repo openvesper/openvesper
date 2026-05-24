@@ -1,20 +1,46 @@
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=OpenVesper&fontSize=64&fontColor=00FFD4&animation=fadeIn&fontAlignY=40&desc=Local-first%20AI%20agent%20framework%20v1.16.0&descAlignY=62&descAlign=50&descSize=18)
+<!-- ── ANIMATED WAVE BANNER ────────────────────────────── -->
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=260&section=header&text=OpenVesper&fontSize=80&fontColor=00FFD4&animation=fadeIn&fontAlignY=38&desc=Local-first%20AI%20agent%20framework&descAlignY=58&descAlign=50&descSize=20)
 
+<!-- ── ANIMATED TYPING TEXT ────────────────────────────── -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2500&pause=600&color=00FFD4&center=true&vCenter=true&width=720&height=50&lines=Bring+your+own+keys.;Zero+data+retention.;15+LLM+providers.+26+agents.+52+plugins.;Run+it+all+on+your+own+machine.)](https://git.io/typing-svg)
+
+<br/>
+
+<!-- ── PROFILE TROPHY (project badge wall) ─────────────── -->
 [![Version](https://img.shields.io/badge/version-1.16.0-00FFD4?style=for-the-badge&labelColor=0a0a0a)](https://github.com/openvesper/openvesper/releases)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0a0a0a)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white&labelColor=0a0a0a)](https://nodejs.org)
 [![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge&labelColor=0a0a0a)](LICENSE)
 [![ZDR](https://img.shields.io/badge/Zero%20Data%20Retention-🔒-10B981?style=for-the-badge&labelColor=0a0a0a)](SECURITY.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-EC4899?style=for-the-badge&labelColor=0a0a0a)](CONTRIBUTING.md)
 
-[![Providers](https://img.shields.io/badge/🧠%20LLM%20Providers-15-00FFD4?style=flat-square&labelColor=0a0a0a)](#-llm-providers)
-[![Agents](https://img.shields.io/badge/🤖%20Agents-26-F59E0B?style=flat-square&labelColor=0a0a0a)](#-agents)
-[![Plugins](https://img.shields.io/badge/🔌%20Plugins-52-8B5CF6?style=flat-square&labelColor=0a0a0a)](#-plugins)
-[![Integrations](https://img.shields.io/badge/🌐%20Integrations-78-10B981?style=flat-square&labelColor=0a0a0a)](https://openvesper.com/integrations)
-[![Docs](https://img.shields.io/badge/📚%20Docs-82+%20pages-EC4899?style=flat-square&labelColor=0a0a0a)](https://openvesper.com/docs)
+<br/>
+
+<!-- ── REPO STATS / DYNAMIC BADGES ─────────────────────── -->
+[![Stars](https://img.shields.io/github/stars/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=00FFD4)](https://github.com/openvesper/openvesper/stargazers)
+[![Forks](https://img.shields.io/github/forks/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=F59E0B)](https://github.com/openvesper/openvesper/network/members)
+[![Issues](https://img.shields.io/github/issues/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=EC4899)](https://github.com/openvesper/openvesper/issues)
+[![PRs](https://img.shields.io/github/issues-pr/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=8B5CF6)](https://github.com/openvesper/openvesper/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=10B981)](https://github.com/openvesper/openvesper/commits/main)
+[![Repo Size](https://img.shields.io/github/repo-size/openvesper/openvesper?style=flat-square&logo=github&labelColor=0a0a0a&color=00FFD4)](https://github.com/openvesper/openvesper)
+
+<br/>
+
+<!-- ── FEATURE COUNT BADGES ────────────────────────────── -->
+![Providers](https://img.shields.io/badge/🧠%20LLM%20Providers-15-00FFD4?style=flat-square&labelColor=0a0a0a)
+![Agents](https://img.shields.io/badge/🤖%20Agents-26-F59E0B?style=flat-square&labelColor=0a0a0a)
+![Plugins](https://img.shields.io/badge/🔌%20Plugins-52-8B5CF6?style=flat-square&labelColor=0a0a0a)
+![Integrations](https://img.shields.io/badge/🌐%20Integrations-78-10B981?style=flat-square&labelColor=0a0a0a)
+![CLI Commands](https://img.shields.io/badge/⌨️%20CLI%20Commands-17-EC4899?style=flat-square&labelColor=0a0a0a)
+![Docs](https://img.shields.io/badge/📚%20Docs-82+%20pages-00FFD4?style=flat-square&labelColor=0a0a0a)
+![Tools](https://img.shields.io/badge/🛠%20Tools-119-F59E0B?style=flat-square&labelColor=0a0a0a)
+![Tests](https://img.shields.io/badge/✅%20Tests-18%2F18%20passing-10B981?style=flat-square&labelColor=0a0a0a)
 
 </div>
+
+<br/>
 
 ```
  ██████╗ ██████╗ ███████╗███╗   ██╗██╗   ██╗███████╗███████╗██████╗ ███████╗██████╗
@@ -32,69 +58,148 @@
 
 **[🌐 Website](https://openvesper.com) · [📦 Install](#-installation) · [🤖 Agents](#-agents) · [💡 Examples](#-examples) · [⚙️ Config](#%EF%B8%8F-configuration) · [📚 Docs](https://openvesper.com/docs)**
 
+<br/>
+
+<!-- ── TECH STACK ICONS ────────────────────────────────── -->
+### 🧰 Tech Stack
+
+[![Skills](https://skillicons.dev/icons?i=ts,nodejs,nextjs,react,tailwind,docker,linux,bash,powershell,vercel,github,vscode&theme=dark)](https://skillicons.dev)
+
+<br/>
+
+### 🤖 Powered By Any of These LLMs
+
+[![LLMs](https://skillicons.dev/icons?i=anthropic,openai,gemini,ollama&theme=dark)](https://openvesper.com/integrations)
+
+<sub>+ 11 more: Groq, DeepSeek, Mistral, OpenRouter, Together, Perplexity, Fireworks, Nebius, DeepInfra, xAI Grok, LM Studio</sub>
+
 </div>
 
 ---
 
 ## 📖 Table of Contents
 
-- [Why OpenVesper](#-why-openvesper)
-- [Architecture](#-architecture)
-- [Installation](#-installation)
-- [Quick Start](#-quick-start)
-- [LLM Providers](#-llm-providers)
-- [Agents](#-agents)
-- [Plugins](#-plugins)
-- [Skills System](#-skills-system)
-- [Channels](#-channels)
-- [Configuration](#%EF%B8%8F-configuration)
-- [CLI Reference](#-cli-reference)
-- [Examples](#-examples)
-- [Privacy & Security](#-privacy--security)
-- [Project Structure](#-project-structure)
-- [FAQ](#-faq)
-- [Contributing](#-contributing)
-- [License](#-license)
+<table>
+<tr>
+<td>
+
+- [🌒 Why OpenVesper](#-why-openvesper)
+- [🏗 Architecture](#-architecture)
+- [📦 Installation](#-installation)
+- [⚡ Quick Start](#-quick-start)
+- [🧠 LLM Providers](#-llm-providers)
+- [🤖 Agents](#-agents)
+- [🔌 Plugins](#-plugins)
+
+</td>
+<td>
+
+- [🎯 Skills System](#-skills-system)
+- [💬 Channels](#-channels)
+- [⚙️ Configuration](#%EF%B8%8F-configuration)
+- [📋 CLI Reference](#-cli-reference)
+- [💡 Examples](#-examples)
+- [🔐 Privacy & Security](#-privacy--security)
+- [🗂 Project Structure](#-project-structure)
+
+</td>
+<td>
+
+- [❓ FAQ](#-faq)
+- [🗺 Roadmap](#-roadmap)
+- [🤝 Contributing](#-contributing)
+- [📊 Stats](#-stats)
+- [📄 License](#-license)
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🌒 Why OpenVesper
 
+<div align="center">
+
+<!-- ── CYLINDER BANNER ────────────────────────────────── -->
+![Comparison](https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=6,11,20&height=80&section=header&text=Most%20AI%20frameworks%20ship%20your%20data.%20This%20one%20doesn't.&fontSize=18&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
 Most AI agent frameworks are wrappers that send your data through their servers. **OpenVesper is the opposite.**
+
+<div align="center">
 
 | Feature | Typical AI Framework | OpenVesper |
 |---------|---------------------|------------|
-| Where state lives | Their cloud | **Your disk (~/.openvesper/)** |
-| Runtime | Library you import | **Persistent gateway daemon** |
-| LLM choice | Locked to one vendor | **15 providers, swap any time** |
-| Agent definition | Python/TS code | **Plain markdown personas** |
-| Telemetry | Always-on | **None. Zero. Never.** |
-| Channels | DIY | **Telegram, Slack, Discord, Email, WS built-in** |
-| Cron scheduling | DIY | **Built-in heartbeats + webhooks** |
-| Crypto-native tools | Add yourself | **22 crypto plugins out of the box** |
+| 📁 Where state lives | Their cloud | **Your disk (~/.openvesper/)** |
+| 🔄 Runtime | Library you import | **Persistent gateway daemon** |
+| 🧠 LLM choice | Locked to one vendor | **15 providers, swap any time** |
+| 🤖 Agent definition | Python/TS code | **Plain markdown personas** |
+| 📊 Telemetry | Always-on | **None. Zero. Never.** |
+| 💬 Channels | DIY | **Telegram, Slack, Discord, Email, WS built-in** |
+| ⏰ Cron scheduling | DIY | **Built-in heartbeats + webhooks** |
+| 💰 Crypto-native tools | Add yourself | **22 crypto plugins out of the box** |
 
-### What's in the box
+</div>
 
-- 🧠 **15 LLM providers** — Anthropic, OpenAI, Gemini, Groq, DeepSeek, Mistral, Together, OpenRouter, Fireworks, Nebius, DeepInfra, xAI, Perplexity, Ollama, LM Studio
-- 🤖 **26 specialist agents** — all defined as plain markdown personas (bags-hunter, github-pm, code-reviewer, quant-analyst, etc.)
-- 🔌 **52 plugins** — crypto, DeFi, Solana, GitHub, Telegram, Slack, weather, fitness, gaming, e-commerce, and more
-- 🎯 **Multi-source skill system** — 6 precedence levels (workspace > project-agent > personal-agent > managed > bundled > extra) with gating + allowlists
-- 💬 **5 channels** — CLI, Telegram, Slack, Discord, WebSocket — all bidirectional
-- ⏰ **Cron + webhook scheduler** — agents run on a timer or respond to events
-- 🔐 **OS keychain integration** — macOS Keychain, libsecret, kwallet, 1Password CLI
-- 🛡 **Approval queue + audit log** — review every tool call before execution
-- 📦 **One-line install** — `curl ... | sh` on macOS/Linux, `iwr ... | iex` on Windows
+### 🎁 What's in the Box
 
-### What it is NOT
+<table>
+<tr>
+<td width="50%">
 
-- ❌ **A hosted SaaS.** There is no openvesper.com account. There are no OpenVesper servers receiving your data.
-- ❌ **A wallet.** The framework never asks for seed phrases or private keys.
-- ❌ **A trading bot.** Crypto plugins are read-only — they query data, they don't sign transactions. You can write your own signing plugin if you need to, but it's not bundled.
-- ❌ **Locked to one model.** Switch from Claude to GPT to a local Ollama model with one env var.
+#### 🧠 15 LLM Providers
+Anthropic · OpenAI · Gemini · Groq · DeepSeek · Mistral · Together · OpenRouter · Fireworks · Nebius · DeepInfra · xAI · Perplexity · Ollama · LM Studio
+
+#### 🤖 26 Specialist Agents
+All defined as plain markdown personas. Crypto hunters, code reviewers, content writers, fitness coaches, smart home controllers — see [/docs/agents](https://openvesper.com/docs/agents).
+
+#### 🔌 52 Plugins · 119 Tools
+Crypto · DeFi · Solana · GitHub · Telegram · Slack · Weather · Fitness · Gaming · E-commerce · DNS · Database · Browser automation — and 40+ more.
+
+#### 🎯 Multi-source Skill System
+6 precedence levels (workspace > project-agent > personal-agent > managed > bundled > extra) with **gating** (env/bin/config/OS) and **per-agent allowlists**.
+
+</td>
+<td width="50%">
+
+#### 💬 5 Channels
+CLI · Telegram · Slack · Discord · WebSocket — **all bidirectional**. Talk to your agent from anywhere.
+
+#### ⏰ Cron + Webhook Scheduler
+Agents run on a timer or respond to external events. Daily summaries to Telegram, PR review on GitHub push, alert when a wallet moves.
+
+#### 🔐 OS Keychain Integration
+macOS Keychain · libsecret · kwallet · 1Password CLI. Your API keys never have to sit in plaintext `.env` files.
+
+#### 🛡 Approval Queue + Audit Log
+Review every tool call before execution. Full audit trail in `~/.openvesper/audit/` for every action.
+
+</td>
+</tr>
+</table>
+
+### 🚫 What It Is NOT
+
+> ⚠️ **Not a hosted SaaS.** There is no openvesper.com account. There are no OpenVesper servers receiving your data.
+
+> ⚠️ **Not a wallet.** The framework never asks for seed phrases or private keys.
+
+> ⚠️ **Not a trading bot.** Crypto plugins are read-only — they query data, they don't sign transactions.
+
+> ⚠️ **Not locked to one model.** Switch from Claude to GPT to a local Ollama model with one env var.
 
 ---
 
 ## 🏗 Architecture
+
+<div align="center">
+
+<!-- ── SOFT BANNER ─────────────────────────────────────── -->
+![Architecture](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=Hub%20and%20Spoke%20·%20Loopback%20Bound&fontSize=18&fontColor=00FFD4&fontAlignY=50)
+
+</div>
 
 ```
                     ┌─────────────────────────────┐
@@ -119,10 +224,10 @@ Most AI agent frameworks are wrappers that send your data through their servers.
                                   │
               ┌───────────────────┼───────────────────┐
               ▼                   ▼                   ▼
-       ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+       ┌─────────────┐    ┌─────────────┐    ┌──────────────┐
        │   LLM API   │    │   Plugins   │    │ ~/.openvesper│
        │ (your key)  │    │ (52 built-in)│   │  (your state)│
-       └─────────────┘    └─────────────┘    └─────────────┘
+       └─────────────┘    └─────────────┘    └──────────────┘
        Anthropic           bagsfm, github,    sessions
        OpenAI              telegram, weather,  audit logs
        Gemini              22 crypto plugins,  OAuth tokens
@@ -130,9 +235,7 @@ Most AI agent frameworks are wrappers that send your data through their servers.
        (+ 11 more)         + your own          .env
 ```
 
-### The Persistent Gateway
-
-The gateway is a long-running daemon bound to `127.0.0.1:18789`. It's the single source of truth for your agent state. Channels (CLI, Telegram, Slack) are clients that talk to the gateway — they're not stateful themselves.
+### 🔄 The Agent Loop
 
 ```
 User Query (any channel)
@@ -148,7 +251,6 @@ User Query (any channel)
                ▼
 ┌─────────────────────────────────────┐
 │  LLM call (with tools + skills)     │
-│                                     │
 │  Model decides which tools to run   │
 └──────────────┬──────────────────────┘
                │  tool_use
@@ -172,37 +274,57 @@ User Query (any channel)
 
 ## 📦 Installation
 
-### Prerequisites
+<div align="center">
+
+![Install](https://capsule-render.vercel.app/api?type=slice&color=gradient&customColorList=6,11,20&height=60&section=header&text=One-line%20install%20·%20Auto%20Node%20·%20Multi-platform&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
+### 🎯 Prerequisites
 
 | Requirement | Version | Notes |
 |------------|---------|-------|
-| Node.js | 18+ | [nodejs.org](https://nodejs.org) |
-| pnpm | 9+ | `npm install -g pnpm` |
-| One LLM API key | — | Anthropic, OpenAI, Groq, or any of the 15 providers |
+| ![Node](https://img.shields.io/badge/Node.js-18+-339933?style=flat&logo=node.js&logoColor=white&labelColor=0a0a0a) | 18+ | [nodejs.org](https://nodejs.org) — *or use the installer's auto-install* |
+| ![pnpm](https://img.shields.io/badge/pnpm-9+-F69220?style=flat&logo=pnpm&logoColor=white&labelColor=0a0a0a) | 9+ | `npm install -g pnpm` |
+| ![Key](https://img.shields.io/badge/LLM%20Key-1+-00FFD4?style=flat&logoColor=white&labelColor=0a0a0a) | — | Any of 15 providers (Anthropic, OpenAI, Groq, Gemini...) |
 
-### Method 1 — One-line installer (recommended)
+### 🚀 Method 1 — One-line Installer (Recommended)
 
-**macOS / Linux:**
+<table>
+<tr>
+<td width="50%">
+
+#### 🐧 macOS / Linux
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/openvesper/openvesper/main/scripts/install.sh | bash
 ```
 
-**Windows (PowerShell):**
+</td>
+<td width="50%">
+
+#### 🪟 Windows (PowerShell)
 
 ```powershell
 iwr -useb https://raw.githubusercontent.com/openvesper/openvesper/main/scripts/install.ps1 | iex
 ```
 
-The installer:
-1. Detects / auto-installs Node.js (via `fnm` on Unix, winget/MSI on Windows)
-2. Detects / auto-installs pnpm
-3. Clones the repo to `~/.local/share/openvesper` (or `%LOCALAPPDATA%\openvesper` on Windows)
-4. Builds all packages
-5. Installs a `vesper` shim to your PATH
-6. Runs `vesper onboard` for guided setup
+</td>
+</tr>
+</table>
 
-### Method 2 — Manual install
+The installer does **all of this** for you:
+
+| Step | What | Where |
+|------|------|-------|
+| 1️⃣ | Detect / auto-install Node.js | via `fnm` (Unix) or `winget`/MSI (Windows) |
+| 2️⃣ | Detect / auto-install pnpm | via `npm install -g pnpm` |
+| 3️⃣ | Clone the repo | `~/.local/share/openvesper` or `%LOCALAPPDATA%\openvesper` |
+| 4️⃣ | Build all packages | `pnpm -r build` |
+| 5️⃣ | Install `vesper` shim to PATH | `~/.local/bin/vesper` or `%LOCALAPPDATA%\Microsoft\WindowsApps\vesper.cmd` |
+| 6️⃣ | Run guided setup wizard | `vesper onboard` |
+
+### 🔧 Method 2 — Manual Install
 
 ```bash
 git clone https://github.com/openvesper/openvesper
@@ -215,7 +337,11 @@ pnpm -r build
 node apps/cli/dist/index.js onboard
 ```
 
-### Method 3 — Docker
+### 🐳 Method 3 — Docker
+
+<table>
+<tr>
+<td>
 
 ```bash
 docker run -d \
@@ -226,6 +352,17 @@ docker run -d \
   ghcr.io/openvesper/openvesper:latest
 ```
 
+</td>
+<td>
+
+[![Docker Pulls](https://img.shields.io/badge/docker%20pull-ghcr.io-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0a0a0a)](https://github.com/openvesper/openvesper/pkgs/container/openvesper)
+
+Multi-arch: `linux/amd64` + `linux/arm64`
+
+</td>
+</tr>
+</table>
+
 Or with docker-compose:
 
 ```bash
@@ -235,11 +372,15 @@ cp .env.example .env  # add your keys
 docker-compose up -d
 ```
 
-Multi-arch images available (`linux/amd64` + `linux/arm64`).
-
 ---
 
 ## ⚡ Quick Start
+
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2000&pause=500&color=00FFD4&center=true&vCenter=true&width=600&height=40&lines=Setup+takes+90+seconds.;5+questions.;You're+chatting+with+an+agent.)](https://git.io/typing-svg)
+
+</div>
 
 After install, run the wizard:
 
@@ -248,11 +389,14 @@ vesper onboard
 ```
 
 The wizard asks 5 questions:
-1. **Workspace location** (default: `~/.openvesper`)
-2. **LLM provider** (Anthropic / OpenAI / Groq / Gemini / ... 15 options)
-3. **API key** (paste once, stored in `~/.openvesper/.env` with mode 0600)
-4. **Default agent** (auto / bags-hunter / code-reviewer / ...)
-5. **Test message** (sends a "hello" query to verify everything works)
+
+| # | Question | Default |
+|---|----------|---------|
+| 1️⃣ | Workspace location | `~/.openvesper` |
+| 2️⃣ | LLM provider (15 choices) | Anthropic |
+| 3️⃣ | API key (stored in `~/.openvesper/.env` mode 0600) | — |
+| 4️⃣ | Default agent (auto / bags-hunter / code-reviewer...) | `auto` |
+| 5️⃣ | Send a test message | Y |
 
 Then ask your first question:
 
@@ -283,25 +427,35 @@ vesper doctor
 
 ## 🧠 LLM Providers
 
+<div align="center">
+
+![Providers](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=15%20providers%20·%20Cloud%20or%20local%20·%20Swap%20any%20time&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
 OpenVesper supports **15 providers**. Set one key, you're done. Set multiple, switch with `--provider` flag.
 
-| Provider | Best Model | Free Tier | Notes |
-|----------|-----------|-----------|-------|
-| **Anthropic** | claude-opus-4-5 | No | Best tool use, recommended |
-| **OpenAI** | gpt-4o, o1, o3 | No | Universal compatibility |
-| **Google Gemini** | gemini-2.5-pro | ✅ 15 RPM | Free tier, fast |
-| **Groq** | llama-3.3-70b | ✅ | Ultra-fast inference |
-| **DeepSeek** | deepseek-v3 / r1 | No | Cheap, good reasoning |
-| **xAI Grok** | grok-4 | No | Real-time web access |
-| **Mistral** | mistral-large | No | EU-hosted |
-| **OpenRouter** | 100+ models | Pay-as-you-go | Unified gateway |
-| **Together** | Open-source models | No | Hosted Llama / Mixtral |
-| **Perplexity** | sonar | No | Search-augmented |
-| **Fireworks** | Llama / Mixtral | No | Fast serverless |
-| **Nebius** | OpenAI-compatible | ✅ | Generous free tier |
-| **DeepInfra** | Open-source | No | Affordable |
-| **Ollama** | llama3.2, mistral, etc | ✅ Local | 100% offline |
-| **LM Studio** | Any GGUF model | ✅ Local | Local GUI |
+<div align="center">
+
+| | Provider | Best Model | Free Tier | Notes |
+|---|----------|-----------|-----------|-------|
+| ![Anthropic](https://img.shields.io/badge/-Anthropic-D97757?style=flat-square&labelColor=0a0a0a) | **Anthropic** | claude-opus-4-5 | ❌ | Best tool use, recommended |
+| ![OpenAI](https://img.shields.io/badge/-OpenAI-412991?style=flat-square&logo=openai&logoColor=white&labelColor=0a0a0a) | **OpenAI** | gpt-4o, o1, o3 | ❌ | Universal compatibility |
+| ![Gemini](https://img.shields.io/badge/-Gemini-4285F4?style=flat-square&logo=google&logoColor=white&labelColor=0a0a0a) | **Google Gemini** | gemini-2.5-pro | ✅ 15 RPM | Free tier, fast |
+| ![Groq](https://img.shields.io/badge/-Groq-F55036?style=flat-square&labelColor=0a0a0a) | **Groq** | llama-3.3-70b | ✅ | Ultra-fast inference |
+| ![DeepSeek](https://img.shields.io/badge/-DeepSeek-4D6BFE?style=flat-square&labelColor=0a0a0a) | **DeepSeek** | v3 / r1 | ❌ | Cheap, good reasoning |
+| ![xAI](https://img.shields.io/badge/-xAI%20Grok-1DA1F2?style=flat-square&labelColor=0a0a0a) | **xAI Grok** | grok-4 | ❌ | Real-time web access |
+| ![Mistral](https://img.shields.io/badge/-Mistral-FA520F?style=flat-square&labelColor=0a0a0a) | **Mistral** | mistral-large | ❌ | EU-hosted |
+| ![OpenRouter](https://img.shields.io/badge/-OpenRouter-6366F1?style=flat-square&labelColor=0a0a0a) | **OpenRouter** | 100+ models | Pay-as-you-go | Unified gateway |
+| ![Together](https://img.shields.io/badge/-Together-0F6FFF?style=flat-square&labelColor=0a0a0a) | **Together** | Open-source | ❌ | Hosted Llama / Mixtral |
+| ![Perplexity](https://img.shields.io/badge/-Perplexity-1FB8CD?style=flat-square&labelColor=0a0a0a) | **Perplexity** | sonar | ❌ | Search-augmented |
+| ![Fireworks](https://img.shields.io/badge/-Fireworks-FF6B6B?style=flat-square&labelColor=0a0a0a) | **Fireworks** | Llama / Mixtral | ❌ | Fast serverless |
+| ![Nebius](https://img.shields.io/badge/-Nebius-00D4FF?style=flat-square&labelColor=0a0a0a) | **Nebius** | OpenAI-compat | ✅ | Generous free tier |
+| ![DeepInfra](https://img.shields.io/badge/-DeepInfra-9B59B6?style=flat-square&labelColor=0a0a0a) | **DeepInfra** | Open-source | ❌ | Affordable |
+| ![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat-square&logo=ollama&logoColor=white&labelColor=0a0a0a) | **Ollama** | llama3.2, mistral | ✅ 100% local | Offline-capable |
+| ![LM Studio](https://img.shields.io/badge/-LM%20Studio-FF3E00?style=flat-square&labelColor=0a0a0a) | **LM Studio** | Any GGUF | ✅ Local | Local GUI |
+
+</div>
 
 ```bash
 # Switch providers per-query
@@ -316,49 +470,118 @@ ANTHROPIC_API_KEY=sk-ant-...
 
 ## 🤖 Agents
 
+<div align="center">
+
+![Agents](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=26%20specialist%20agents%20·%20Plain%20markdown%20personas&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
 OpenVesper ships with **26 specialist agents**, each defined as a markdown persona in `.agents/<mode>/`. Use `vesper -a <mode>` to invoke one directly.
 
-### Crypto / Web3 (8)
+### 💰 Crypto / Web3 (8)
 
-| Agent | Specialty |
-|-------|-----------|
-| 🎒 **bags-hunter** | Bags.fm Solana memecoin tracking + scoring |
-| 🚀 **pumpfun-hunter** | Pump.fun bonding curve analysis + holder scans |
-| 🐸 **base-hunter** | Base chain memecoin specialist (Aerodrome, BaseSwap) |
-| 🎁 **airdrop-hunter** | Multi-chain airdrop tracking + eligibility |
-| 🖼 **nft-analyst** | NFT collection floor, holders, rarity |
-| 🏦 **defi-strategist** | DeFi yields, TVL, liquidity analysis |
-| 📊 **quant-analyst** | TA, indicators, backtests |
-| 📈 **investment-researcher** | Falsifiable theses, DD, market research |
+<table>
+<tr>
+<td width="33%">
 
-### Development (5)
+#### 🎒 bags-hunter
+Bags.fm Solana memecoin tracking + scoring
 
-| Agent | Specialty |
-|-------|-----------|
-| 🔬 **code-reviewer** | PR review, code quality, bug detection |
-| 🐙 **github-pm** | PR triage, issue management, repo health |
-| 🛠 **solana-dev-coach** | Anchor, IDL, compute units, dApp helper |
-| 🛡 **security-reviewer** | Code + token security audit |
-| 🧪 **tdd-coach** | Test-driven development guidance |
+#### 🚀 pumpfun-hunter
+Pump.fun bonding curve analysis + holder scans
 
-### General (12)
+#### 🐸 base-hunter
+Base chain memecoin specialist
 
-| Agent | Specialty |
-|-------|-----------|
-| 🛸 **auto** | Universal — picks tools automatically |
-| ✍ **content-writer** | Drafts posts, articles, marketing copy |
-| 🐦 **social-strategist** | Twitter/X trend + posting strategy |
-| 📋 **productivity-coach** | Calendar, tasks, email triage |
-| 📐 **data-analyst** | SQL, CSV, charts, statistics |
-| ⚖ **legal-assistant** | Reads contracts, summarizes legal docs |
-| 🗣 **language-tutor** | Language learning conversation partner |
-| 🌍 **travel-planner** | Day-by-day itineraries, weather-aware |
-| 🍳 **cooking-coach** | Recipes, techniques, dietary adaptations |
-| 🎮 **gaming-companion** | Steam profile, Twitch, game stats |
-| 💪 **fitness-coach** | Strava + wger + OpenFoodFacts |
-| 🏠 **smart-home-controller** | Home Assistant integration |
+</td>
+<td width="33%">
 
-### Defining your own agent
+#### 🎁 airdrop-hunter
+Multi-chain airdrop tracking + eligibility
+
+#### 🖼 nft-analyst
+NFT collection floor, holders, rarity
+
+#### 🏦 defi-strategist
+DeFi yields, TVL, liquidity analysis
+
+</td>
+<td width="33%">
+
+#### 📊 quant-analyst
+TA, indicators, backtests
+
+#### 📈 investment-researcher
+Falsifiable theses, DD, market research
+
+</td>
+</tr>
+</table>
+
+### 💻 Development (5)
+
+<table>
+<tr>
+<td width="20%">
+
+#### 🔬 code-reviewer
+PR review, code quality, bug detection
+
+</td>
+<td width="20%">
+
+#### 🐙 github-pm
+PR triage, issue management, repo health
+
+</td>
+<td width="20%">
+
+#### 🛠 solana-dev-coach
+Anchor, IDL, dApp helper
+
+</td>
+<td width="20%">
+
+#### 🛡 security-reviewer
+Code + token security audit
+
+</td>
+<td width="20%">
+
+#### 🧪 tdd-coach
+Test-driven development guidance
+
+</td>
+</tr>
+</table>
+
+### 🌐 General (13)
+
+<table>
+<tr>
+<td>🛸 <b>auto</b><br/><sub>Picks tools automatically</sub></td>
+<td>✍ <b>content-writer</b><br/><sub>Posts, articles, marketing</sub></td>
+<td>🐦 <b>social-strategist</b><br/><sub>Twitter/X trends + strategy</sub></td>
+<td>📋 <b>productivity-coach</b><br/><sub>Calendar, tasks, email</sub></td>
+</tr>
+<tr>
+<td>📐 <b>data-analyst</b><br/><sub>SQL, CSV, charts</sub></td>
+<td>⚖ <b>legal-assistant</b><br/><sub>Contracts, legal docs</sub></td>
+<td>🗣 <b>language-tutor</b><br/><sub>Language learning partner</sub></td>
+<td>🌍 <b>travel-planner</b><br/><sub>Day-by-day itineraries</sub></td>
+</tr>
+<tr>
+<td>🍳 <b>cooking-coach</b><br/><sub>Recipes, techniques</sub></td>
+<td>🎮 <b>gaming-companion</b><br/><sub>Steam, Twitch, stats</sub></td>
+<td>💪 <b>fitness-coach</b><br/><sub>Strava, exercise DB</sub></td>
+<td>🏠 <b>smart-home-controller</b><br/><sub>Home Assistant</sub></td>
+</tr>
+<tr>
+<td>📰 <b>news-curator</b><br/><sub>Daily news digests</sub></td>
+</tr>
+</table>
+
+### ✍️ Defining Your Own Agent
 
 Drop a markdown file at `.agents/<your-mode>/manifest.md`:
 
@@ -381,43 +604,46 @@ Run it: `vesper -a my-agent -q "your question"`.
 
 ## 🔌 Plugins
 
-**52 built-in plugins** provide tools the agent can call. Each plugin can expose multiple tools.
+<div align="center">
+
+![Plugins](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=52%20bundled%20plugins%20·%20119%20tools&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
+**52 built-in plugins** provide tools the agent can call.
 
 <details>
-<summary><b>🔍 Click to expand full plugin list</b></summary>
+<summary><b>🔍 Click to expand the full plugin list (52 total)</b></summary>
 
-### Crypto & Web3 (22)
-- `bagsfm` `pumpfun` `bonkfun` `base-meme` `solana` `solana-dev`
-- `kamino` `drift` `aerodrome` `jupiter`
-- `security-goplus` `rugcheck` `defi` `helius`
-- `birdeye` `whale-alert` `airdrop` `farcaster`
-- `derivatives` `memescan` `onchain` `crypto`
+<br/>
 
-### Productivity (5)
-- `notion` `github` `gcal` `research` `news`
+#### 💰 Crypto & Web3 (22)
+`bagsfm` · `pumpfun` · `bonkfun` · `base-meme` · `solana` · `solana-dev` · `kamino` · `drift` · `aerodrome` · `jupiter` · `security-goplus` · `rugcheck` · `defi` · `helius` · `birdeye` · `whale-alert` · `airdrop` · `farcaster` · `derivatives` · `memescan` · `onchain` · `crypto`
 
-### Channels (5)
-- `telegram` `slack` `discord` `email` `farcaster`
+#### 📋 Productivity (5)
+`notion` · `github` · `gcal` · `research` · `news`
 
-### Lifestyle (8)
-- `weather` `maps` `translate` `banking` `fitness`
-- `gaming` `shopify` `package-tracking`
+#### 💬 Channels (5)
+`telegram` · `slack` · `discord` · `email` · `farcaster`
 
-### Media (4)
-- `spotify` `youtube` `image-gen` `voice`
+#### ✨ Lifestyle (8)
+`weather` · `maps` · `translate` · `banking` · `fitness` · `gaming` · `shopify` · `package-tracking`
 
-### Dev Tools (6)
-- `filesystem` `shell` `code-exec` `browser` `database` `dns`
+#### 🎨 Media (4)
+`spotify` · `youtube` · `image-gen` · `voice`
 
-### Automation (2)
-- `cron` `webhooks`
+#### ⚙️ Dev Tools (6)
+`filesystem` · `shell` · `code-exec` · `browser` · `database` · `dns`
 
-### Meta (1)
-- `skill-workshop` — agents propose new skills mid-conversation
+#### 🔧 Automation (2)
+`cron` · `webhooks`
+
+#### 🛠 Meta (1)
+`skill-workshop` — agents propose new skills mid-conversation
 
 </details>
 
-### Authoring your own plugin
+### 🏗 Authoring Your Own Plugin
 
 ```bash
 vesper plugin scaffold weather
@@ -453,6 +679,12 @@ Then `pnpm install && pnpm run build`, and the agent picks it up automatically.
 
 ## 🎯 Skills System
 
+<div align="center">
+
+![Skills](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=Multi-source%20·%20Gated%20·%20Per-agent%20allowlists&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
 Skills are markdown instruction snippets that agents load on demand. v1.16.0 introduces a **multi-source loader** with strict precedence:
 
 ```
@@ -464,9 +696,9 @@ Skills are markdown instruction snippets that agents load on demand. v1.16.0 int
 6. config.skills.load.extraDirs     ← lowest priority
 ```
 
-Same name in multiple sources? The higher source wins. Mirrors [AgentSkills spec](https://github.com/anthropics/anthropic-cookbook).
+Same name in multiple sources? **The higher source wins.**
 
-### Skill gating
+### 🚪 Skill Gating
 
 A skill can declare requirements that filter it out at load time:
 
@@ -487,7 +719,7 @@ When the user asks for an image, use the Gemini image API...
 
 Without the env var? The skill is hidden — agent doesn't even see it. **No silent failures.**
 
-### Installing skills
+### 📥 Installing Skills
 
 ```bash
 # From GitHub
@@ -507,7 +739,7 @@ vesper skills info gif-attribution
 vesper skills sources         # show all 6 source dirs
 ```
 
-### Per-agent skill allowlists
+### 🎚 Per-agent Skill Allowlists
 
 In `openvesper.json`:
 
@@ -530,16 +762,20 @@ In `openvesper.json`:
 
 Talk to your agent from anywhere. All channels go through the same gateway.
 
+<div align="center">
+
 | Channel | Setup | Direction |
 |---------|-------|-----------|
-| **CLI** | None | Both |
-| **Telegram** | Bot token | Both (DMs + groups) |
-| **Slack** | App + webhook | Both |
-| **Discord** | Bot token | Both |
-| **Email** | Gmail OAuth or IMAP | Both |
-| **WebSocket** | None (built into gateway) | Both |
+| 💻 **CLI** | None | Both |
+| ✈️ **Telegram** | Bot token | Both (DMs + groups) |
+| 💼 **Slack** | App + webhook | Both |
+| 🎮 **Discord** | Bot token | Both |
+| 📧 **Email** | Gmail OAuth or IMAP | Both |
+| 🌐 **WebSocket** | Built into gateway | Both |
 
-### DM Pairing
+</div>
+
+### 🔐 DM Pairing
 
 When an unknown user DMs your bot, the gateway issues a 6-character pairing code:
 
@@ -550,7 +786,7 @@ You (CLI)    → vesper pairing approve telegram A3B7K2
 Bot          → "✓ Approved. You're in."
 ```
 
-No more open bots that anyone can spam.
+**No more open bots that anyone can spam.**
 
 ---
 
@@ -571,7 +807,7 @@ All config lives in `~/.openvesper/`:
 └── skills-registry.json  # Skill install registry
 ```
 
-### `.env` — API keys
+### 🔑 `.env` — API Keys
 
 ```bash
 # Required: at least one LLM provider
@@ -590,30 +826,9 @@ GITHUB_TOKEN=
 HELIUS_API_KEY=
 ```
 
-### `config.json` — Behaviour
+### 🔐 OS Keychain (opt-in)
 
-```json
-{
-  "llm": {
-    "provider": "anthropic",
-    "model": "claude-opus-4-5",
-    "temperature": 0.7,
-    "maxIterations": 12
-  },
-  "memory": {
-    "enabled": true,
-    "maxItems": 100
-  },
-  "gateway": {
-    "host": "127.0.0.1",
-    "port": 18789
-  }
-}
-```
-
-### OS Keychain (opt-in)
-
-Don't want plaintext .env? Use your OS keychain:
+Don't want plaintext `.env`? Use your OS keychain:
 
 ```bash
 vesper secret backend         # detect: macOS Keychain / libsecret / kwallet / 1Password
@@ -626,7 +841,8 @@ vesper secret rm ANTHROPIC_API_KEY
 
 ## 📋 CLI Reference
 
-### Core
+<details>
+<summary><b>📌 Core Commands</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -637,7 +853,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper monitor` | Live TUI dashboard |
 | `vesper init <template>` | Quick-start (crypto-watcher / code-reviewer / blog-writer) |
 
-### Agents & plugins
+</details>
+
+<details>
+<summary><b>🤖 Agents & Plugins</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -648,7 +867,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper plugin scaffold <name>` | Generate plugin skeleton |
 | `vesper plugin list` | All 52 bundled plugins |
 
-### Skills
+</details>
+
+<details>
+<summary><b>🎯 Skills</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -659,7 +881,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper skills update <name>` | Re-fetch git-installed skill |
 | `vesper skills uninstall <name>` | Remove |
 
-### Gateway & daemon
+</details>
+
+<details>
+<summary><b>🔄 Gateway & Daemon</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -669,7 +894,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper gateway install-daemon` | systemd / launchd / Windows scheduled task |
 | `vesper gateway logs` | Tail audit log |
 
-### Lifecycle
+</details>
+
+<details>
+<summary><b>♻️ Lifecycle</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -678,7 +906,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper uninstall [--purge]` | Remove install (`--purge` also wipes workspace) |
 | `vesper migrate` | Apply workspace schema migrations |
 
-### Pairing & secrets
+</details>
+
+<details>
+<summary><b>🔐 Pairing & Secrets</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -687,7 +918,10 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper pairing deny <channel> <code>` | Reject |
 | `vesper secret <backend\|set\|get\|rm>` | OS keychain integration |
 
-### Cron & webhooks
+</details>
+
+<details>
+<summary><b>⏰ Cron & Webhooks</b></summary>
 
 | Command | Purpose |
 |---------|---------|
@@ -695,11 +929,19 @@ vesper secret rm ANTHROPIC_API_KEY
 | `vesper cron add <job>` | Add cron job |
 | `vesper cron remove <id>` | Remove |
 
+</details>
+
 ---
 
 ## 💡 Examples
 
-### Example 1 — Crypto deep dive
+<div align="center">
+
+![Examples](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=Real%20agent%20workflows%20you%20can%20copy%20today&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
+### 🎒 Example 1 — Crypto Deep Dive
 
 ```bash
 vesper -a bags-hunter -q "Top 5 Solana memecoins by 24h volume, score each"
@@ -734,7 +976,7 @@ established team, liquidity locked.
 ⚠ Not financial advice. DYOR.
 ```
 
-### Example 2 — GitHub PR review
+### 🔬 Example 2 — GitHub PR Review
 
 ```bash
 vesper -a code-reviewer -q "Review PR #42 on openvesper/openvesper"
@@ -750,34 +992,18 @@ vesper -a code-reviewer -q "Review PR #42 on openvesper/openvesper"
 
 ## PR #42 — "Add Vercel deployment config"
 
-**Summary:** Adds `vercel.json` and updates docker-compose
-to use GHCR image.
-
 ### ✓ Looks good
 - Workspace install command correctly uses --ignore-scripts
 - Output directory matches Next.js convention
 
 ### ⚠ Concerns
-- `vercel.json` should use `installCommand` not `buildCommand`
-  for `pnpm install`
-- Missing `framework: "nextjs"` field
-
-### Suggested changes
-```diff
-- "buildCommand": "pnpm install && pnpm -r build && ..."
-+ "installCommand": "pnpm install --frozen-lockfile",
-+ "buildCommand": "pnpm -r build && cd apps/website && pnpm build",
-+ "framework": "nextjs"
-```
-
-### Tests
-No tests added. Consider a smoke test that pulls /health
-after deploy.
+- vercel.json should use installCommand not buildCommand
+- Missing framework: "nextjs" field
 
 Verdict: 🟡 Request changes (small)
 ```
 
-### Example 3 — Cron-based daily summary
+### ⏰ Example 3 — Cron-based Daily Summary
 
 ```yaml
 # ~/.openvesper/cron.yaml
@@ -800,49 +1026,65 @@ vesper cron add ./daily-sol-summary.yaml
 vesper gateway install-daemon
 ```
 
-Now every day at 09:00 you get a Telegram message with the summary. No babysitting needed.
+Now every day at 09:00 you get a Telegram message with the summary.
 
 ---
 
 ## 🔐 Privacy & Security
 
+<div align="center">
+
+![Security](https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=6,11,20&height=60&section=header&text=Three%20commitments%20·%20Enforced%20in%20code&fontSize=16&fontColor=00FFD4&fontAlignY=50)
+
+</div>
+
 OpenVesper is built on three commitments — all enforced in code, not just documented.
 
-### 1. Zero Data Retention
+<table>
+<tr>
+<td width="33%">
 
-- **No telemetry.** Grep the source: `grep -rn "telemetry\|analytics" packages/` returns zero.
-- **No phone-home.** The gateway makes outbound calls only to:
-  - The LLM provider you configured (your key, your call)
-  - APIs explicitly invoked by tools you triggered
-- **No third-party tracking.** No Google Analytics, no Sentry, no PostHog.
+### 1️⃣ Zero Data Retention
 
-### 2. Loopback by default
+- **No telemetry.** Grep returns zero.
+- **No phone-home.** Gateway calls only your LLM and tools you trigger.
+- **No third-party tracking.** No GA, no Sentry, no PostHog.
+
+</td>
+<td width="33%">
+
+### 2️⃣ Loopback by Default
 
 - Gateway binds to `127.0.0.1:18789` only
-- Inbound external access requires explicit `OPENVESPER_GATEWAY_HOST=0.0.0.0`
-- Channels (Telegram etc.) connect *outbound* to provider APIs — never inbound
+- External access requires explicit `OPENVESPER_GATEWAY_HOST=0.0.0.0`
+- Channels connect **outbound** to provider APIs — never inbound
 
-### 3. No wallet keys
+</td>
+<td width="33%">
 
-- The framework never asks for seed phrases or private keys
-- Crypto plugins are **read-only** — they query data, they don't sign transactions
-- If you write a signing plugin, you handle the keys (we recommend OS keychain via `vesper secret`)
+### 3️⃣ No Wallet Keys
 
-### File permissions
+- Never asks for seed phrases or private keys
+- Crypto plugins are **read-only**
+- Custom signing plugin? You handle the keys (use `vesper secret`)
 
-- All workspace files: mode 0600 (owner read/write only)
-- All workspace dirs: mode 0700
+</td>
+</tr>
+</table>
+
+### 🛡 File Permissions
+
+- All workspace files: **mode 0600** (owner read/write only)
+- All workspace dirs: **mode 0700**
 - Verified by `vesper doctor` health check
 
-### Audit log
+### 📜 Audit Log
 
 Every tool call is logged to `~/.openvesper/audit/<date>.jsonl`:
 
 ```json
 {"ts":"2026-05-24T11:23:45Z","session":"abc","agent":"bags-hunter","tool":"bagsfm_score_token","input":{"mint":"..."},"approved":true,"result":"success"}
 ```
-
-Browse with `vesper gateway logs` or just `tail ~/.openvesper/audit/*.jsonl`.
 
 See [`SECURITY.md`](SECURITY.md) for the full security model.
 
@@ -854,7 +1096,7 @@ See [`SECURITY.md`](SECURITY.md) for the full security model.
 openvesper/
 │
 ├── apps/
-│   ├── cli/                       ← `vesper` CLI binary
+│   ├── cli/                       ← vesper CLI binary
 │   ├── gateway/                   ← Persistent daemon (127.0.0.1:18789)
 │   ├── telegram-bot/              ← Telegram channel adapter
 │   ├── website/                   ← Next.js docs site (openvesper.com)
@@ -872,29 +1114,18 @@ openvesper/
 │       └── ... (47 more)
 │
 ├── .agents/                       ← 26 markdown agent personas
-│   ├── bags-hunter/manifest.md
-│   ├── code-reviewer/manifest.md
-│   └── ... (24 more)
-│
 ├── scripts/
 │   ├── install.sh                 ← One-line Unix installer
 │   ├── install.ps1                ← Windows PowerShell installer
 │   └── publish-packages.sh        ← npm publish helper
-│
 ├── test/
 │   └── integration.test.ts        ← 18 vitest tests
-│
-├── .github/
-│   └── workflows/
-│       ├── build.yml              ← CI: build + test on every push
-│       └── docker.yml             ← Multi-arch GHCR publish
-│
+├── .github/workflows/
+│   ├── build.yml                  ← CI: build + test on every push
+│   └── docker.yml                 ← Multi-arch GHCR publish
 ├── Dockerfile                     ← Multi-stage production image
-├── docker-compose.yml             ← Quick docker run
-├── package.json                   ← Monorepo root (pnpm workspaces)
-├── pnpm-workspace.yaml
+├── docker-compose.yml
 ├── CHANGELOG.md
-├── ROADMAP.md
 ├── VISION.md
 ├── SECURITY.md
 └── README.md                      ← You are here
@@ -904,41 +1135,98 @@ openvesper/
 
 ## ❓ FAQ
 
-**Q: Do I need all 15 LLM provider keys?**
+<details>
+<summary><b>Do I need all 15 LLM provider keys?</b></summary>
+<br/>
 No, just one. Anthropic and OpenAI work best for tool-heavy agents. If you want free, use Groq or Gemini.
+</details>
 
-**Q: What does it cost?**
+<details>
+<summary><b>What does it cost?</b></summary>
+<br/>
 The framework is free (MIT). LLM costs vary:
-- Claude Sonnet: ~$0.003 / 1K in + $0.015 / 1K out (~$0.01–0.05 per query)
-- Groq / Gemini free tier: $0 with rate limits
-- Local Ollama: $0, runs on your hardware
+<ul>
+  <li>Claude Sonnet: ~$0.003 / 1K in + $0.015 / 1K out (~$0.01–0.05 per query)</li>
+  <li>Groq / Gemini free tier: $0 with rate limits</li>
+  <li>Local Ollama: $0, runs on your hardware</li>
+</ul>
+</details>
 
-**Q: Can I use it for trading?**
-The framework is for analysis. Crypto plugins are **read-only** — they don't sign transactions. You can write your own signing plugin, but key handling is your responsibility.
+<details>
+<summary><b>Can I use it for trading?</b></summary>
+<br/>
+The framework is for analysis. Crypto plugins are <b>read-only</b> — they don't sign transactions. You can write your own signing plugin, but key handling is your responsibility.
+</details>
 
-**Q: Does it work offline?**
-Yes — use Ollama or LM Studio as the provider. Some plugins need internet (`web_search`, etc.), but the agent loop itself runs locally.
+<details>
+<summary><b>Does it work offline?</b></summary>
+<br/>
+Yes — use Ollama or LM Studio as the provider. Some plugins need internet, but the agent loop runs locally.
+</details>
 
-**Q: How is this different from LangChain?**
-LangChain is a library you import into your code. OpenVesper is a **persistent daemon** with channels, scheduling, and approval queues built in. See [`/docs/comparison`](https://openvesper.com/docs/comparison) for a detailed table.
+<details>
+<summary><b>How is this different from LangChain?</b></summary>
+<br/>
+LangChain is a library you import into your code. OpenVesper is a <b>persistent daemon</b> with channels, scheduling, and approval queues built in. See <a href="https://openvesper.com/docs/comparison">/docs/comparison</a> for a detailed table.
+</details>
 
-**Q: Will my data go anywhere?**
-- Your prompts go to **your chosen LLM provider** (Anthropic, OpenAI, etc.)
-- Tool calls go to **the APIs they query** (Binance, GitHub, etc.)
-- Nothing goes to OpenVesper servers (there are none)
-- Memory is stored locally in `~/.openvesper/`
+<details>
+<summary><b>Will my data go anywhere?</b></summary>
+<br/>
+<ul>
+  <li>Your prompts go to <b>your chosen LLM provider</b></li>
+  <li>Tool calls go to <b>the APIs they query</b> (Binance, GitHub, etc.)</li>
+  <li>Nothing goes to OpenVesper servers (there are none)</li>
+  <li>Memory is stored locally in <code>~/.openvesper/</code></li>
+</ul>
+</details>
 
-**Q: Can I run multiple agents at once?**
+<details>
+<summary><b>Can I run multiple agents at once?</b></summary>
+<br/>
 Yes. The gateway routes per-session, so one user can have multiple parallel agent conversations. Telegram + CLI + Slack can all be active simultaneously.
+</details>
 
-**Q: Windows support?**
-Yes. PowerShell installer, native `vesper.cmd` shim, daemon via Task Scheduler. WSL2 also works.
+<details>
+<summary><b>Windows support?</b></summary>
+<br/>
+Yes. PowerShell installer, native <code>vesper.cmd</code> shim, daemon via Task Scheduler. WSL2 also works.
+</details>
 
-**Q: How do I add a new LLM provider that isn't in the 15?**
-Implement the `LLMProvider` interface in `packages/core/src/providers/`. ~100 lines of code. PR welcome.
+<details>
+<summary><b>How do I add a new LLM provider?</b></summary>
+<br/>
+Implement the <code>LLMProvider</code> interface in <code>packages/core/src/providers/</code>. ~100 lines of code. PR welcome.
+</details>
 
-**Q: Is the workspace encrypted?**
-Files are mode 0600 (POSIX). For at-rest encryption, use OS keychain (`vesper secret`) for API keys or full-disk encryption (FileVault / LUKS / BitLocker).
+<details>
+<summary><b>Is the workspace encrypted?</b></summary>
+<br/>
+Files are mode 0600 (POSIX). For at-rest encryption, use OS keychain (<code>vesper secret</code>) for API keys or full-disk encryption (FileVault / LUKS / BitLocker).
+</details>
+
+---
+
+## 🗺 Roadmap
+
+<div align="center">
+
+| Status | Item | Target |
+|--------|------|--------|
+| ✅ Done | Skills v2 multi-source loader | v1.16.0 |
+| ✅ Done | Skill Workshop plugin | v1.16.0 |
+| ✅ Done | Windows + Docker installers | v1.16.0 |
+| ✅ Done | Multi-arch Docker on GHCR | v1.16.0 |
+| 🚧 In Progress | npm publish (`@openvesper/cli`) | v1.17.0 |
+| 🎯 Planned | More chat channels (Matrix, Signal) | v1.18.0 |
+| 🎯 Planned | i18n CLI messages (TR, EN, ES, JA) | v1.18.0 |
+| 🤔 Considering | TUI dashboard panels | v1.19+ |
+| 🤔 Considering | Plugin marketplace (opt-in) | v2.x |
+| ❌ Won't Do | Hosted SaaS | — |
+| ❌ Won't Do | Built-in wallet signing | — |
+| ❌ Won't Do | Telemetry / analytics | — |
+
+</div>
 
 ---
 
@@ -965,6 +1253,27 @@ pnpm test             # 18 vitest tests
 
 ---
 
+## 📊 Stats
+
+<div align="center">
+
+<!-- ── REPO STATS CARDS ─────────────────────────────── -->
+[![Repo Stats](https://github-readme-stats.vercel.app/api/pin/?username=openvesper&repo=openvesper&theme=dark&bg_color=0a0a0a&title_color=00FFD4&icon_color=00FFD4&text_color=ffffff&border_color=2a2a2a&hide_border=false)](https://github.com/openvesper/openvesper)
+
+<br/>
+
+<!-- ── LANGUAGES CARD ─────────────────────────────── -->
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=openvesper&theme=dark&bg_color=0a0a0a&title_color=00FFD4&text_color=ffffff&border_color=2a2a2a&hide_border=false&layout=compact&card_width=400)](https://github.com/openvesper)
+
+<br/>
+
+<!-- ── ACTIVITY GRAPH ─────────────────────────────── -->
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=openvesper&theme=react-dark&bg_color=0a0a0a&color=00FFD4&line=00FFD4&point=F59E0B&area=true&hide_border=true)](https://github.com/openvesper)
+
+</div>
+
+---
+
 ## 📄 License
 
 MIT — see [`LICENSE`](LICENSE).
@@ -975,14 +1284,22 @@ OpenVesper is an independent open-source project. Not affiliated with any chain,
 
 <div align="center">
 
+<!-- ── ANIMATED FOOTER WAVE ─────────────────────────── -->
 **[🌐 openvesper.com](https://openvesper.com) · [📚 Docs](https://openvesper.com/docs) · [🐙 GitHub](https://github.com/openvesper/openvesper) · [📝 Changelog](CHANGELOG.md)**
 
-[![Stars](https://img.shields.io/github/stars/openvesper/openvesper?style=for-the-badge&logo=github&labelColor=0a0a0a&color=00FFD4)](https://github.com/openvesper/openvesper/stargazers)
-[![Issues](https://img.shields.io/github/issues/openvesper/openvesper?style=for-the-badge&logo=github&labelColor=0a0a0a&color=F59E0B)](https://github.com/openvesper/openvesper/issues)
-[![Release](https://img.shields.io/github/v/release/openvesper/openvesper?style=for-the-badge&logo=github&labelColor=0a0a0a&color=8B5CF6)](https://github.com/openvesper/openvesper/releases)
+<br/>
 
-*Local-first. Bring your own keys. Zero data retention.* 🌒
+[![Star History Chart](https://api.star-history.com/svg?repos=openvesper/openvesper&type=Date&theme=dark)](https://www.star-history.com/#openvesper/openvesper&Date)
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer)
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=3000&pause=800&color=00FFD4&center=true&vCenter=true&width=600&height=40&lines=Local-first.;Bring+your+own+keys.;Zero+data+retention.;Built+with+🌒+for+the+open+web.)](https://git.io/typing-svg)
+
+<br/>
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fopenvesper%2Fopenvesper&label=Visitors&countColor=%2300FFD4&style=for-the-badge&labelColor=0a0a0a)
+
+<!-- ── ANIMATED FOOTER ──────────────────────────────── -->
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer)
 
 </div>
