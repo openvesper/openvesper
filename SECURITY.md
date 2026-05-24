@@ -230,5 +230,4 @@ Events are local. They are not sent to us.
 ## Contact
 
 
-- **General questions:** [GitHub Discussions](https://github.com/openvesper/openvesper/discussions)
 - **Author:** [@openvesper](https://github.com/openvesper) (OpenVesper 🌒)
