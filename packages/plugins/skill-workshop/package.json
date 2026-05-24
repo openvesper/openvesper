@@ -1,0 +1,30 @@
+{
+  "name": "@openvesper/plugin-skill-workshop",
+  "version": "1.16.0",
+  "description": "Skill Workshop — propose, review, and write workspace skills from observed agent procedures",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && node ../../../scripts/fix-esm-imports.mjs dist",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@openvesper/plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "files": ["dist", "README.md"],
+  "publishConfig": { "access": "public" },
+  "homepage": "https://github.com/openvesper/openvesper/tree/main/packages/plugins/skill-workshop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/plugins/skill-workshop"
+  },
+  "bugs": "https://github.com/openvesper/openvesper/issues"
+}

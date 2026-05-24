@@ -1,0 +1,39 @@
+{
+  "name": "@openvesper/plugin-sdk",
+  "version": "1.16.0",
+  "description": "SDK for building OpenVesper plugins",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./dist/testing.d.ts",
+      "import": "./dist/testing.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node ../../scripts/fix-esm-imports.mjs dist",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@openvesper/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

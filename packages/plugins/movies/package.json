@@ -1,0 +1,50 @@
+{
+  "name": "@openvesper/plugin-movies",
+  "version": "1.16.0",
+  "description": "Movies & TV shows via TMDB \u2014 search, details, trending, recommendations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node ../../../scripts/fix-esm-imports.mjs dist",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@openvesper/plugin-sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "openvesper",
+    "plugin",
+    "movies",
+    "ai",
+    "agent"
+  ],
+  "author": "OpenVesper",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/plugins/movies"
+  },
+  "homepage": "https://github.com/openvesper/openvesper/tree/main/packages/plugins/movies",
+  "bugs": "https://github.com/openvesper/openvesper/issues",
+  "engines": {
+    "node": ">=18"
+  }
+}

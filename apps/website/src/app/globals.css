@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌒 OpenVesper — Terminal-style design tokens */
+
+:root {
+  --bg: #ffffff;
+  --bg-elevated: #fafaf9;
+  --fg: #0a0a0a;
+  --border: #e5e5e5;
+  --accent: #c87b3c;
+  --accent2: #e8a662;
+  --muted: #71717a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --bg-elevated: #141414;
+    --fg: #fafaf9;
+    --border: #27272a;
+    --accent: #f59e0b;
+    --accent2: #fbbf24;
+    --muted: #71717a;
+  }
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: ui-monospace, "SF Mono", Menlo, Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+}
+
+* { box-sizing: border-box; }
+
+.bg-bg { background-color: var(--bg); }
+.bg-bg-elevated { background-color: var(--bg-elevated); }
+.text-fg { color: var(--fg); }
+.text-accent { color: var(--accent); }
+.text-accent2 { color: var(--accent2); }
+.text-muted { color: var(--muted); }
+.border-border { border-color: var(--border); }
+.bg-accent { background-color: var(--accent); }
+.bg-accent2 { background-color: var(--accent2); }
+
+pre, code { font-family: inherit; }
+pre { white-space: pre-wrap; word-wrap: break-word; }
+
+/* Ticker */
+.ticker-container {
+  overflow: hidden;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: ticker 60s linear infinite;
+  gap: 1rem;
+}
+.ticker-track:hover { animation-play-state: paused; }
+.ticker-card {
+  flex-shrink: 0;
+  width: 320px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--bg);
+}
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+html { scroll-behavior: smooth; }
+
+::selection { background: var(--accent); color: var(--bg); }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* Docs prose */
+.prose { max-width: 70ch; color: var(--fg); line-height: 1.7; }
+.prose h1 { font-size: 2.25rem; font-weight: bold; margin-top: 0; margin-bottom: 1rem; letter-spacing: -0.025em; }
+.prose h2 { font-size: 1.5rem; font-weight: bold; margin-top: 2.5rem; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+.prose h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.75rem; margin-bottom: 0.5rem; color: var(--accent); }
+.prose h4 { font-size: 1rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+.prose p { margin-bottom: 1rem; }
+.prose .lead { font-size: 1.1rem; color: var(--fg); opacity: 0.85; margin-bottom: 1.5rem; line-height: 1.65; }
+.prose .callout { background: var(--bg-elevated); border-left: 3px solid var(--accent); padding: 0.75rem 1rem; margin: 1rem 0; border-radius: 0 0.25rem 0.25rem 0; font-size: 0.95em; }
+.prose a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.prose a:hover { opacity: 0.8; }
+.prose code { background: var(--bg-elevated); padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.88em; border: 1px solid var(--border); color: var(--accent); }
+.prose pre { background: var(--bg-elevated); padding: 1rem; border-radius: 0.5rem; border: 1px solid var(--border); overflow-x: auto; margin: 1rem 0; font-size: 0.85em; line-height: 1.5; }
+.prose pre code { background: transparent; border: none; padding: 0; color: var(--fg); }
+.prose ul { list-style: disc; margin-left: 1.5rem; margin-bottom: 1rem; }
+.prose ol { list-style: decimal; margin-left: 1.5rem; margin-bottom: 1rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose li > ul, .prose li > ol { margin-top: 0.35rem; margin-bottom: 0.5rem; }
+.prose blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; margin: 1rem 0; color: var(--muted); font-style: italic; }
+.prose table { border-collapse: collapse; margin: 1rem 0; width: 100%; font-size: 0.9em; }
+.prose th, .prose td { border: 1px solid var(--border); padding: 0.5rem 0.75rem; text-align: left; vertical-align: top; }
+.prose th { background: var(--bg-elevated); font-weight: 600; color: var(--accent); }
+.prose strong { color: var(--fg); font-weight: 600; }
+.prose hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }

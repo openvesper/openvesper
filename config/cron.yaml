@@ -1,0 +1,86 @@
+# 🌒 OpenVesper — Scheduled jobs
+# Heartbeat / cron config.
+#
+# Load with: vesper daemon start  (auto-loads config/cron.yaml)
+# Or import via API: loadCronConfig('config/cron.yaml')
+#
+# Cron format: minute hour day-of-month month day-of-week
+# Shortcuts: @hourly @daily @weekly @monthly @yearly
+#
+# Prompt template variables:
+#   {{now}}        ISO timestamp
+#   {{date}}       YYYY-MM-DD
+#   {{yesterday}}  YYYY-MM-DD (1 day ago)
+#   {{time}}       HH:MM
+#   {{weekday}}    e.g. "Monday"
+#   {{user}}       Current OS user
+
+jobs:
+  - id: morning-briefing
+    name: Daily morning briefing
+    schedule: "0 8 * * *"
+    agent: auto
+    prompt: |
+      Good morning. It is {{date}}. Give me my daily brief:
+      - Top 3 crypto market moves overnight
+      - Calendar events today
+      - Weather where I am
+      - Any open PRs or unread emails needing attention
+    deliver_to: "telegram:@me"
+    enabled: false
+
+  - id: friday-weekly-retro
+    name: Friday weekly retro reminder
+    schedule: "0 17 * * FRI"
+    agent: productivity-coach
+    prompt: |
+      It's Friday afternoon. Help me run my weekly retro for the week of {{date}}.
+      Pull from my calendar, GitHub commits, and recent Slack threads.
+      Use the weekly-retro skill.
+    deliver_to: "telegram:@me"
+    enabled: false
+
+  - id: pr-review-monday
+    name: Monday morning PR review
+    schedule: "0 9 * * MON"
+    agent: code-reviewer
+    prompt: |
+      Summarize all open PRs in our main repos. Highlight any that have been open
+      more than 5 days. Suggest which to merge first.
+    deliver_to: "slack:#engineering"
+    enabled: false
+
+  - id: market-close-summary
+    name: Daily market close summary
+    schedule: "30 16 * * MON-FRI"
+    agent: investment-researcher
+    prompt: |
+      Markets just closed. Give me a 5-bullet summary of:
+      - SPX/NDX moves
+      - Top sector winners/losers
+      - Crypto: BTC, ETH, SOL
+      - Whale flows in last 6h
+      - Anything notable in news
+    deliver_to: "telegram:@me"
+    enabled: false
+
+  - id: token-unlock-alert
+    name: Daily token unlock scan
+    schedule: "0 12 * * *"
+    agent: defi-strategist
+    prompt: |
+      Scan token unlocks happening in the next 7 days.
+      Flag any unlock > 1% of circulating supply.
+      Use the airdrop-eligibility and defi-position-review skills as needed.
+    deliver_to: "telegram:@me"
+    enabled: false
+
+  - id: hourly-memory-compact
+    name: Hourly memory compaction
+    schedule: "@hourly"
+    agent: auto
+    prompt: |
+      Compact the session memory: trim to the most recent 500 items,
+      consolidate similar entries.
+    deliver_to: "log"
+    enabled: false

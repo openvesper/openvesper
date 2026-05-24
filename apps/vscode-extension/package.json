@@ -1,0 +1,175 @@
+{
+  "name": "openvesper-vscode",
+  "displayName": "OpenVesper",
+  "description": "OpenVesper agent runtime \u2014 local-first AI agents from VSCode",
+  "version": "1.16.0",
+  "publisher": "openvesper",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git"
+  },
+  "homepage": "https://github.com/openvesper/openvesper",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Chat",
+    "Other"
+  ],
+  "keywords": [
+    "ai",
+    "agent",
+    "agents",
+    "llm",
+    "local first",
+    "self hosted"
+  ],
+  "icon": "resources/icon.png",
+  "main": "./dist/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "openVesper",
+          "title": "OpenVesper",
+          "icon": "resources/icon-sidebar.svg"
+        }
+      ]
+    },
+    "views": {
+      "openVesper": [
+        {
+          "type": "webview",
+          "id": "openVesper.chatView",
+          "name": "\ud83e\udd85 OpenVesper Chat"
+        },
+        {
+          "id": "openVesper.agentsTree",
+          "name": "Agents",
+          "icon": "$(person)"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "openVesper.openChat",
+        "title": "OpenVesper: Open Chat"
+      },
+      {
+        "command": "openVesper.askAboutSelection",
+        "title": "OpenVesper: Ask About Selection"
+      },
+      {
+        "command": "openVesper.settings",
+        "title": "OpenVesper: Settings"
+      },
+      {
+        "command": "openVesper.runDoctor",
+        "title": "OpenVesper: Run Doctor"
+      },
+      {
+        "command": "openVesper.showAudit",
+        "title": "OpenVesper: Show Recent Audit Events"
+      },
+      {
+        "command": "openVesper.refreshAgents",
+        "title": "OpenVesper: Refresh Agents",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "openVesper.startAgentInChat",
+        "title": "OpenVesper: Start Agent in Chat"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "openVesper.askAboutSelection",
+          "when": "editorHasSelection",
+          "group": "1_modification"
+        }
+      ],
+      "view/title": [
+        {
+          "command": "openVesper.refreshAgents",
+          "when": "view == openVesper.agentsTree",
+          "group": "navigation"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "openVesper.askAboutSelection",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorHasSelection"
+      }
+    ],
+    "configuration": {
+      "title": "OpenVesper",
+      "properties": {
+        "openVesper.defaultProvider": {
+          "type": "string",
+          "default": "groq",
+          "enum": [
+            "anthropic",
+            "openai",
+            "groq",
+            "gemini",
+            "deepseek",
+            "openrouter"
+          ],
+          "description": "Default LLM provider"
+        },
+        "openVesper.defaultAgent": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "code",
+            "crypto",
+            "solana",
+            "bagsfm",
+            "security",
+            "research"
+          ],
+          "description": "Default agent mode"
+        },
+        "openVesper.gatewayUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:18789",
+          "description": "URL of the OpenVesper gateway. Default: http://127.0.0.1:18789"
+        }
+      }
+    },
+    "languages": [
+      {
+        "id": "openvesper-skill",
+        "aliases": [
+          "OpenVesper Skill"
+        ],
+        "filenamePatterns": [
+          "**/skills/**/SKILL.md",
+          "**/.agents/**/SKILL.md"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "build": "tsc -p ./ && node ../../scripts/fix-esm-imports.mjs dist"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3",
+    "@vscode/vsce": "^3.2.0"
+  }
+}

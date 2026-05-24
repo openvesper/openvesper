@@ -1,0 +1,54 @@
+name: Build & Test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
+      - name: Install
+        # --ignore-scripts: skip optional native deps (better-sqlite3, keytar)
+        # so the build works in environments without build toolchain
+        run: pnpm install --frozen-lockfile --ignore-scripts
+
+      - name: Build all packages
+        run: pnpm -r build
+
+      - name: Test
+        run: pnpm test
+
+      - name: Verify CLI runs
+        run: |
+          node apps/cli/dist/index.js --version
+          node apps/cli/dist/index.js --list-providers | head -20
+          node apps/cli/dist/index.js --list-agents | head -20
+
+      - name: Verify gateway starts
+        run: |
+          # Start gateway in background, wait 3s, hit /health, kill it
+          node apps/gateway/dist/index.js > /tmp/gw.log 2>&1 &
+          GW_PID=$!
+          sleep 3
+          curl -sf http://127.0.0.1:18789/health || (echo "Gateway health check failed" && cat /tmp/gw.log && exit 1)
+          kill $GW_PID 2>/dev/null || true
+          echo "✓ Gateway booted and answered /health"

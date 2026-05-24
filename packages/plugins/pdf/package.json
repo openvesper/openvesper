@@ -1,0 +1,34 @@
+{
+  "name": "@openvesper/plugin-pdf",
+  "version": "1.16.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && node ../../../scripts/fix-esm-imports.mjs dist"
+  },
+  "dependencies": {
+    "@openvesper/plugin-sdk": "workspace:*",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/plugins/pdf"
+  },
+  "homepage": "https://github.com/openvesper/openvesper/tree/main/packages/plugins/pdf",
+  "bugs": "https://github.com/openvesper/openvesper/issues",
+  "engines": {
+    "node": ">=18"
+  }
+}

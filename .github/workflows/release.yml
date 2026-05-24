@@ -1,0 +1,44 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: Install & Build
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - name: Create release archive
+        run: |
+          mkdir -p release
+          tar czf release/openvesper-${{ github.ref_name }}.tar.gz \
+            --exclude='node_modules' --exclude='dist' --exclude='.next' \
+            apps packages examples README.md LICENSE package.json pnpm-workspace.yaml
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release/*.tar.gz
+          generate_release_notes: true
+          draft: false
+          prerelease: false

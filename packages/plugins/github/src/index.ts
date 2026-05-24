@@ -1,0 +1,18 @@
+import { definePlugin, defineTool, inputSchema } from "@openvesper/plugin-sdk";
+import { getUserProfile, getUserRepos, getRepoDetails, getRepoIssues, createIssue, searchGitHubRepos, getRepoPRs, compareRepos } from "./tools";
+
+export default definePlugin({
+  name: "@openvesper/plugin-github", version: "1.0.0", author: "OpenVesper",
+  description: "GitHub repo, issue, PR automation", license: "MIT",
+  tools: [
+    defineTool({ name: "github_profile", description: "Get GitHub user profile", inputSchema: inputSchema({ username: { type: "string", description: "Username" } }, ["username"]), handler: async (i) => getUserProfile(i.username as string), category: "github" }),
+    defineTool({ name: "github_repos", description: "List user repos", inputSchema: inputSchema({ username: { type: "string", description: "Username" }, sort: { type: "string", description: "updated|stars|created" }, limit: { type: "number", description: "Count" } }, ["username"]), handler: async (i) => getUserRepos(i.username as string, (i.sort as any) || "updated", (i.limit as number) || 10), category: "github" }),
+    defineTool({ name: "github_repo", description: "Repo details", inputSchema: inputSchema({ owner: { type: "string", description: "Owner" }, repo: { type: "string", description: "Repo" } }, ["owner", "repo"]), handler: async (i) => getRepoDetails(i.owner as string, i.repo as string), category: "github" }),
+    defineTool({ name: "github_issues", description: "Repo issues", inputSchema: inputSchema({ owner: { type: "string", description: "Owner" }, repo: { type: "string", description: "Repo" }, state: { type: "string", description: "open|closed|all" }, limit: { type: "number", description: "Count" } }, ["owner", "repo"]), handler: async (i) => getRepoIssues(i.owner as string, i.repo as string, (i.state as any) || "open", (i.limit as number) || 10), category: "github" }),
+    defineTool({ name: "github_create_issue", description: "Create issue", inputSchema: inputSchema({ owner: { type: "string", description: "Owner" }, repo: { type: "string", description: "Repo" }, title: { type: "string", description: "Title" }, body: { type: "string", description: "Body" }, labels: { type: "string", description: "Labels" } }, ["owner", "repo", "title", "body"]), handler: async (i) => createIssue(i.owner as string, i.repo as string, i.title as string, i.body as string, (i.labels as any) || []), category: "github", permission: "write" }),
+    defineTool({ name: "github_search", description: "Search repos", inputSchema: inputSchema({ query: { type: "string", description: "Query" }, language: { type: "string", description: "Language" }, sort_by: { type: "string", description: "stars|updated|forks" }, limit: { type: "number", description: "Count" } }, ["query"]), handler: async (i) => searchGitHubRepos(i.query as string, i.language as string || undefined, (i.sort_by as any) || "stars", (i.limit as number) || 10), category: "github" }),
+    defineTool({ name: "github_prs", description: "Repo pull requests", inputSchema: inputSchema({ owner: { type: "string", description: "Owner" }, repo: { type: "string", description: "Repo" }, state: { type: "string", description: "open|closed|all" }, limit: { type: "number", description: "Count" } }, ["owner", "repo"]), handler: async (i) => getRepoPRs(i.owner as string, i.repo as string, (i.state as any) || "open", (i.limit as number) || 10), category: "github" }),
+    defineTool({ name: "github_compare", description: "Compare multiple repos", inputSchema: inputSchema({ repos: { type: "array", description: "owner/repo array" } }, ["repos"]), handler: async (i) => compareRepos(i.repos as string[]), category: "github" }),
+  ]
+
+});

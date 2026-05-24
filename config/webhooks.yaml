@@ -1,0 +1,59 @@
+# 🌒 OpenVesper — Webhooks
+# Map external events → agent runs.
+#
+# Each webhook listens at /webhook/<path> on the gateway.
+# Set up the external service (GitHub, Stripe, etc.) to POST to:
+#   https://<your-gateway>/webhook/<path>
+#
+# SECURITY: Always set secret_env. Without it, anyone who guesses
+# the URL can trigger your agent.
+#
+# Prompt templates support {{event.path.to.field}} interpolation.
+
+webhooks:
+  - path: /webhook/github-pr
+    secret_env: GITHUB_WEBHOOK_SECRET
+    signature_header: x-hub-signature-256
+    signature_algo: sha256
+    signature_prefix: "sha256="
+    agent: code-reviewer
+    filter:
+      action: opened
+    prompt_template: |
+      A new PR was just opened: {{event.pull_request.title}}
+      Repo: {{event.repository.full_name}}
+      Author: {{event.pull_request.user.login}}
+      URL: {{event.pull_request.html_url}}
+
+      Review it. Use the pr-description skill if helpful.
+    deliver_to: "slack:#engineering"
+    enabled: false
+
+  - path: /webhook/stripe-charge
+    secret_env: STRIPE_WEBHOOK_SECRET
+    signature_header: stripe-signature
+    agent: auto
+    filter:
+      type: charge.succeeded
+    prompt_template: |
+      A new payment came in: ${{event.data.object.amount}}/100
+      Customer: {{event.data.object.customer}}
+
+      Update the CRM and send a thank-you email.
+    deliver_to: "log"
+    enabled: false
+
+  - path: /webhook/whale-alert
+    secret_env: WHALE_ALERT_WEBHOOK_SECRET
+    signature_header: x-whale-signature
+    agent: defi-strategist
+    prompt_template: |
+      Whale alert: {{event.amount}} {{event.symbol}} transferred.
+      From: {{event.from.address}}
+      To: {{event.to.address}}
+      USD: ${{event.usd_value}}
+
+      Investigate. Is this CEX inflow, outflow, or wallet-to-wallet?
+      Flag anything > $10M to me directly.
+    deliver_to: "telegram:@me"
+    enabled: false

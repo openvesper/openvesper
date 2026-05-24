@@ -1,0 +1,58 @@
+{
+  "name": "@openvesper/cli",
+  "version": "1.16.0",
+  "description": "Interactive CLI for OpenVesper",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "vesper": "./dist/index.js",
+    "openvesper": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node ../../scripts/fix-esm-imports.mjs dist",
+    "dev": "tsx src/index.ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@openvesper/core": "workspace:*",
+    "@openvesper/plugin-bagsfm": "workspace:*",
+    "@openvesper/plugin-pumpfun": "workspace:*",
+    "@openvesper/plugin-solana": "workspace:*",
+    "@openvesper/plugin-solana-dev": "workspace:*",
+    "@openvesper/plugin-base-meme": "workspace:*",
+    "@openvesper/plugin-crypto": "workspace:*",
+    "@openvesper/plugin-strategies": "workspace:*",
+    "@openvesper/plugin-security": "workspace:*",
+    "@openvesper/plugin-research": "workspace:*",
+    "@openvesper/plugin-defi": "workspace:*",
+    "@openvesper/plugin-twitter": "workspace:*",
+    "@openvesper/plugin-onchain": "workspace:*",
+    "@openvesper/plugin-whale": "workspace:*",
+    "@openvesper/plugin-github": "workspace:*",
+    "@openvesper/plugin-telegram": "workspace:*",
+    "@openvesper/plugin-macro": "workspace:*",
+    "@openvesper/plugin-derivatives": "workspace:*",
+    "@openvesper/plugin-airdrop": "workspace:*",
+    "@openvesper/plugin-memescan": "workspace:*",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2",
+    "@openvesper/plugin-sdk": "workspace:*",
+    "@openvesper/plugin-skill-workshop": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

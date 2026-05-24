@@ -1,0 +1,34 @@
+{
+  "name": "@openvesper/plugin-discord",
+  "version": "1.16.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && node ../../../scripts/fix-esm-imports.mjs dist"
+  },
+  "dependencies": {
+    "@openvesper/plugin-sdk": "workspace:*",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/plugins/discord"
+  },
+  "homepage": "https://github.com/openvesper/openvesper/tree/main/packages/plugins/discord",
+  "bugs": "https://github.com/openvesper/openvesper/issues",
+  "engines": {
+    "node": ">=18"
+  }
+}

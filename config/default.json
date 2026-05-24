@@ -1,0 +1,34 @@
+{
+  "$schema": "./schema.json",
+  "agent": {
+    "model": "anthropic/claude-opus-4-5",
+    "temperature": 0.5,
+    "max_tokens": 4096,
+    "max_iterations": 20
+  },
+  "permissions": {
+    "default": "ask",
+    "rules": {
+      "read": "allow_always",
+      "external": "allow_always",
+      "write": "ask",
+      "execute": "ask",
+      "trade": "ask"
+    }
+  },
+  "memory": {
+    "enabled": true,
+    "workspace": "~/.openvesper/workspace"
+  },
+  "skills": {
+    "directory": "./skills",
+    "auto_load": true
+  },
+  "trading": {
+    "dry_run": true
+  },
+  "telegram": {
+    "dm_policy": "pairing",
+    "allow_from": []
+  }
+}

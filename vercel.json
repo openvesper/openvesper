@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd apps/website && npm install --legacy-peer-deps && npm run build",
+  "outputDirectory": "apps/website/.next",
+  "installCommand": "echo 'skipping root install'",
+  "framework": "nextjs",
+  "ignoreCommand": "echo 'skipping root ignore check'"
+}

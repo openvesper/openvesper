@@ -1,0 +1,46 @@
+# Sensitive — must NEVER be uploaded
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+private/
+
+# Source / dev artifacts
+.git
+.github
+.vscode
+node_modules
+.pnpm-store
+.next
+out
+dist
+build
+coverage
+.nyc_output
+
+# Local-only state
+.openvesper
+*.log
+build-log.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Backups
+*.old
+*.bak
+*.backup
+*.tmp
+
+# Repo-only docs that don't belong in build
+TODO.md
+CONTRIBUTING.md
+examples/
+test/
+qa/

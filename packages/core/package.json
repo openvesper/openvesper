@@ -1,0 +1,47 @@
+{
+  "name": "@openvesper/core",
+  "version": "1.16.0",
+  "description": "Core runtime for OpenVesper \u2014 multi-LLM AI agent framework",
+  "license": "MIT",
+  "author": "OpenVesper",
+  "homepage": "https://github.com/openvesper/openvesper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/core"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc && node ../../scripts/fix-esm-imports.mjs dist",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

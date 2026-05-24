@@ -1,0 +1,32 @@
+# OpenVesper docker-compose
+#
+# Usage:
+#   docker-compose up -d
+#
+# Workspace persists in ./openvesper-workspace/ — back it up to keep
+# sessions, OAuth tokens, audit logs, and your .env.
+
+services:
+  openvesper:
+    image: ghcr.io/openvesper/openvesper:latest
+    # Or build locally:
+    # build: .
+    container_name: openvesper
+    restart: unless-stopped
+    ports:
+      # Bind to loopback only — same security stance as the native gateway.
+      # If you want LAN access, change to "18789:18789" and review SECURITY.md.
+      - "127.0.0.1:18789:18789"
+    environment:
+      # Pass API keys from host environment or .env file
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      # Telegram bot (if used)
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      # Bind on container — outside is restricted by the port mapping above
+      OPENVESPER_GATEWAY_HOST: 0.0.0.0
+    volumes:
+      # Persistent workspace — sessions, audit, OAuth tokens, pairings
+      - ./openvesper-workspace:/home/vesper/.openvesper

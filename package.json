@@ -1,0 +1,73 @@
+{
+  "name": "openvesper",
+  "version": "1.16.0",
+  "private": true,
+  "description": "\ud83c\udf12 OpenVesper \u2014 Open-source AI agent framework with first-class crypto support, persistent gateway, and proactive heartbeats.",
+  "keywords": [
+    "ai",
+    "agent",
+    "llm",
+    "claude",
+    "openai",
+    "ollama",
+    "crypto",
+    "solana",
+    "trading",
+    "framework",
+    "open-source",
+    "vesper",
+    "openvesper"
+  ],
+  "license": "MIT",
+  "author": "OpenVesper",
+  "homepage": "https://openvesper.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/openvesper/openvesper/issues"
+  },
+  "type": "module",
+  "bin": {
+    "openvesper": "./openvesper.mjs",
+    "vesper": "./openvesper.mjs"
+  },
+  "scripts": {
+    "build": "pnpm -r --filter=./packages/** --filter=./apps/** build",
+    "dev": "pnpm --filter=@openvesper/cli dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "clean": "bash scripts/clean.sh",
+    "setup": "bash scripts/setup.sh",
+    "release": "bash scripts/release.sh",
+    "openvesper": "node openvesper.mjs",
+    "publish:all": "node scripts/publish.mjs",
+    "publish:dry": "pnpm -r --filter='@openvesper/*' publish --access public --dry-run",
+    "gateway": "pnpm --filter=@openvesper/gateway dev",
+    "gateway:build": "pnpm --filter=@openvesper/gateway build"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0",
+    "vitest": "^2.1.4",
+    "@vitest/coverage-v8": "^2.1.4",
+    "tsx": "^4.19.2",
+    "tsdown": "^0.6.0",
+    "@openvesper/core": "workspace:*",
+    "@openvesper/plugin-sdk": "workspace:*",
+    "@openvesper/plugin-bagsfm": "workspace:*",
+    "@openvesper/plugin-web-search": "workspace:*",
+    "@openvesper/plugin-pdf": "workspace:*",
+    "@openvesper/plugin-discord": "workspace:*",
+    "@openvesper/plugin-pumpfun": "workspace:*",
+    "@openvesper/plugin-github": "workspace:*",
+    "@openvesper/plugin-defi": "workspace:*"
+  },
+  "packageManager": "pnpm@9.12.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

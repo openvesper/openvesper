@@ -1,0 +1,44 @@
+{
+  "name": "@openvesper/plugin-maps",
+  "version": "1.16.0",
+  "description": "maps plugin for OpenVesper",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node ../../../scripts/fix-esm-imports.mjs dist",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@openvesper/plugin-sdk": "workspace:*",
+    "@openvesper/core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvesper/openvesper.git",
+    "directory": "packages/plugins/maps"
+  },
+  "homepage": "https://github.com/openvesper/openvesper/tree/main/packages/plugins/maps",
+  "bugs": "https://github.com/openvesper/openvesper/issues"
+}

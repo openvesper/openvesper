@@ -1,0 +1,38 @@
+{
+  "name": "@openvesper/telegram-bot",
+  "version": "1.16.0",
+  "description": "Standalone Telegram bot for OpenVesper agents",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "openvesper-bot": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && node ../../scripts/fix-esm-imports.mjs dist",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@openvesper/core": "workspace:*",
+    "@openvesper/plugin-bagsfm": "workspace:*",
+    "@openvesper/plugin-pumpfun": "workspace:*",
+    "@openvesper/plugin-solana": "workspace:*",
+    "@openvesper/plugin-crypto": "workspace:*",
+    "@openvesper/plugin-security": "workspace:*",
+    "@openvesper/plugin-research": "workspace:*",
+    "@openvesper/plugin-defi": "workspace:*",
+    "@openvesper/plugin-twitter": "workspace:*",
+    "@openvesper/plugin-onchain": "workspace:*",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@types/node": "^22.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
